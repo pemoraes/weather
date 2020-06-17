@@ -1,0 +1,72 @@
+*{ margin: 0; padding: 0;}
+
+.body{   
+  background-image: linear-gradient(to bottom,rgb(229, 230, 253), #1a1717f3 );
+  height: 100%; width: 100%;
+  text-align: center;
+}
+
+.main{ z-index: 2;}
+
+.header{ background-image: linear-gradient(to right, #D663D6, #A702E0);   color: #0209D6; font-size: 20px; font-weight: bold;padding: 12px 16px;  width: 100%; }
+
+.titulo{ color: #fff; display: block; font-size: 20px; font-weight: bold; width: 100%;}
+
+.app{
+  color: #0209D6;
+ font-size: 20px;
+ font-weight: bold;
+}
+
+ion-icon{
+  color: #6608C9;
+    float: left;
+    font-size: 30px;
+}
+
+.erro{
+  background: #D663D6;
+  border-radius: 10px;
+  border-style: solid #6608C9;
+  display: block;
+  height: 100px;
+  margin: 50px auto 0px auto;
+  padding: 18px;
+  width: 90%;
+
+}
+
+.carddetalhe{
+  background: #D663D6;
+  box-shadow: 0px 0px 5px 2px #6608C9;
+  border-radius: 6px;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+  z-index: 10000;
+}
+
+.textoerro{
+  color: #6608C9;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cidade{ color: #6608C9; font-size: 28px; font-weight: bold; }
+.temp{ color: #6608C9; font-size: 42px; font-weight: bold; margin-top: 10px;}
+.separador-cidade{ color: #6608C9; font-size: 28px;  font-weight: bold; margin-top: 0px; padding: 0; }
+.clima-cidade{ color: #6608C9; font-size: 17px; font-weight: bold; margin-top: 0px; }
+.tpressao { color: #6608C9; font-size: 13px; font-weight: bold; margin-top: 0px; }
+.tempmin{ color: #6608C9; font-size: 16px; font-weight: bold; margin-top: 0px; }
+.tempmax{ color: #6608C9;font-size: 16px;  font-weight: bold; margin-top: 0px; }
+.texto{ color: #0209D6; font-size: 16px; font-weight: bold; margin-top: 0px; margin-top: -10px;}
+
+.div-cards{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+  z-index: 100;
+}
+

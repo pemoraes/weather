@@ -1,0 +1,70 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+
+    <div class="header">
+      <ion-icon name="arrow-back-outline" routerLink="/home"></ion-icon>
+      <h3 class="app">Previsão do Tempo</h3>
+    </div>
+    
+    <div class="main" style="margin-top: 22px;" *ngIf="informacoes">
+      <p class="cidade">{{informacoes.name}}</p>
+      <p class="temp">{{temp}} º</p>
+      <div class="div-cards">
+        <div class="carddetalhe">
+          <p class="texto"><br>Temperatura mínima:</p><br/>
+          <p class="tempmin">
+            <ion-icon name="thermometer-outline" size="small"></ion-icon>
+            <ion-icon name="arrow-down-outline" size="small"></ion-icon>
+            {{tempMinima}} º
+        </p>
+        </div>
+        <div class="carddetalhe">
+          <p class="texto"><br/>Temperatura máxima:</p><br/>
+          <p class="tempmax">
+            <ion-icon name="thermometer-outline" size="small"></ion-icon>
+            <ion-icon name="arrow-up-outline" size="small"></ion-icon>
+            {{tempMaxima}} º
+          </p>
+          
+        </div>
+      </div>
+      <div class="div-cards">
+        <div class="carddetalhe">
+          <p class="texto"><br/>Umidade:</p><br/>
+          <p class="tempmin">
+            <ion-icon name="water-outline" size="small"></ion-icon>
+            {{informacoes.main.humidity}} %
+          </p>
+        </div>
+        <div class="carddetalhe">
+          <p class="texto"><br/>Pressão:</p><br/>
+          <p class="tpressao">
+            <ion-icon name="arrow-down-outline" size="small"></ion-icon>
+            <ion-icon name="arrow-up-outline" size="small"></ion-icon>
+            {{informacoes.main.pressure}} mm
+          </p>
+        </div>
+      </div>
+      <div class="div-cards">
+        <div class="carddetalhe">
+          <p class="texto"><br/>Latitude:</p><br/>
+          <p class="tempmin">
+            <ion-icon name="enter-outline" size="small"></ion-icon>
+            {{informacoes.coord.lat}}
+          </p>
+        </div>
+        <div class="carddetalhe">
+          <p class="texto"><br/>Longitude:</p><br/>
+          <p class="tempmin">
+            <ion-icon name="push-outline" size="small"></ion-icon>
+            {{informacoes.coord.lon}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="erro" *ngIf="notFound == 'erro'">
+       <p class="textoerro">Não foi possível encontrar a cidade, verifique se o nome está correto e tente novamente.</p>
+    </div>
+  </div>
+</ion-content>

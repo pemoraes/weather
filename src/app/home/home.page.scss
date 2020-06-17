@@ -1,0 +1,96 @@
+*{ margin: 0; padding: 0;}
+
+.body{ height: 100%; width: 100%;
+  background-image: linear-gradient(to bottom, rgb(229, 230, 253),#1a1717f3);
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+.header{ background-image: linear-gradient(to right, #D663D6, #A702E0);   color: #0209D6; font-size: 20px; font-weight: bold;padding: 12px 16px;  width: 100%; }
+
+
+
+.carddigite{
+  
+  background: #D663D6;
+  border-radius: 10px;
+  display: block;
+  height: 150px;
+  margin: 20px auto 0px auto;
+  width: 90%;
+  padding: 18px;
+}
+
+
+.label{
+  color: #6608C9;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.input{
+  color: #6608C9;
+  border: none;
+  border-radius: 2px;
+  box-shadow: inset 0px 0px 3px 1px #0a0a0a10;
+  padding: 7px 9px;
+  width: 100%;
+  &:focus{
+    border: none;
+    box-shadow: inset 0px 0px 3px 1px #0a0a0a25;
+    outline: none;
+  }
+  &::placeholder{
+    opacity: 0.6;
+  }
+}
+
+.botao:hover {
+  background-image: linear-gradient(to right,#D663D6, #A702E0);
+  color: #6608C9;
+}
+
+.botao{
+  background-image: linear-gradient(to right, #A702E0, #D663D6);
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px 1px #6608C9;
+  color: #6608C9;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 16px;
+  padding: 8px 16px;
+  width: 100%;
+
+}
+
+.info{
+  color: #6608C9;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.div-cards{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 94%;
+}
+
+.cards{
+  background: #D663D6;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px 1px #6608C9;
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  width: 50%;
+  
+}
+
+.nomes{ font-size: 16px; font-weight: bold;  color: #6608C9; }
+

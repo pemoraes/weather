@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <p class="header">App Previsão do Tempo</p>
+    <div class="carddigite">
+      <h4 class="label">Digite o nome da cidade:</h4>
+      <input [(ngModel)]="cep" class="input" type="text">
+      <button class="botao" (click)="enviaCep()">Verificar</button>
+    </div>
+    <p class="info">Informações: </p>
+    <div class="div-cards">
+      <div class="cards">
+        <p class="nomes"><ion-icon name="thermometer-outline"></ion-icon><ion-icon name="arrow-down-outline"></ion-icon>Temperatura Mínima
+        </p>
+        
+      </div>
+      <div class="cards">
+        <p class="nomes"><ion-icon name="thermometer-outline"></ion-icon><ion-icon name="arrow-up-outline"></ion-icon>Temperatura Máxima</p>
+      </div>
+    </div>
+    <div class="div-cards">
+      <div class="cards">
+        <p class="nomes"><ion-icon name="water-outline"></ion-icon>Umidade</p>
+      </div>
+      <div class="cards">
+        <p class="nomes"><ion-icon name="arrow-down-outline"></ion-icon><ion-icon name="arrow-up-outline"></ion-icon>Pressão</p>
+      </div>
+    </div>
+    <div class="div-cards">
+      <div class="cards">
+        <p class="nomes"><ion-icon name="enter-outline"></ion-icon>Latitude</p>
+      </div>
+      <div class="cards">
+        <p class="nomes"><ion-icon name="push-outline"></ion-icon>Longitude</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
